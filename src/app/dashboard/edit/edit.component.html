@@ -1,0 +1,22 @@
+<div class="container-fluid full-page-container">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-lg-4 col-sm-8 animated fadeIn">
+      <!-- Default form contact -->
+      <form [formGroup]="editForm" class="text-center border border-light p-5">
+        <p class="h4 mb-4">Edit User</p>
+        <!-- Name -->
+        <input formControlName="name" type="text" id="defaultContactFormName" class="form-control mb-4" required placeholder="Name">
+        <input formControlName="id" type="hidden" id="defaultContactFormId" class="form-control mb-4" required placeholder="Name">
+        <!-- Email -->
+        <input formControlName="email" type="email" id="defaultContactFormEmail" class="form-control mb-4" required placeholder="E-mail">
+        <!-- Email -->
+        <input formControlName="password"type="password" id="defaultContactFormPass" class="form-control mb-4" required placeholder="Password">
+
+        <!-- Send button -->
+        <button mdbBtn color="info" block="true" type="submit" (click)="onEditSubmit()">Save</button>
+        <a routerLink="/dashboard" class="mt-4" mdbBtn color="info" block="true" type="button">Cancel</a>
+      </form>
+      <!-- Default form contact -->
+    </div>
+  </div>
+</div>

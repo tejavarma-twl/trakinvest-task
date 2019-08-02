@@ -1,0 +1,22 @@
+<div class="container-fluid full-page-container">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-lg-4 col-sm-8 animated fadeIn">
+      <!-- Default form contact -->
+      <form [formGroup]="addForm" (submit)="onAddSubmit()" class="text-center border border-light p-5">
+
+        <p class="h4 mb-4">Add User</p>
+        <!-- Name -->
+        <input formControlName="name"  type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+        <!-- Email -->
+        <input formControlName="email"  type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+        <!-- Email -->
+        <input formControlName="password"  type="password" id="defaultContactFormPass" class="form-control mb-4" placeholder="Password">
+
+        <!-- Send button -->
+        <button mdbBtn color="info" block="true" type="submit">Send</button>
+
+      </form>
+      <!-- Default form contact -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid full-page-container">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-lg-4 col-sm-8 animated fadeIn">
+      <!-- Default form register -->
+      <form [formGroup]="signupForm" class="text-center border border-light p-5" action="#!">
+
+        <p class="h4 mb-4">Sign up</p>
+
+        <input formControlName="name" type="text" id="defaultRegisterFormFirstName" class="form-control mb-4" placeholder="First name">
+
+        <!-- E-mail -->
+        <input formControlName="email" type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+        <!-- Password -->
+        <input formControlName="password" type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+          At least 8 characters and 1 digit
+        </small>
+        <!-- Sign up button -->
+        <button class="btn btn-info my-4 btn-block" type="submit" (click)="onRegisterSubmit()">Sign Up</button>
+        <p>Already a user?
+          <a routerLink="/">Sign In</a>
+        </p>
+      </form>
+      <!-- Default form register -->
+    </div>
+  </div>
+</div>
