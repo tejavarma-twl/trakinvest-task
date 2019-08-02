@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  php_rest: {
+    apiKey: 'code_igniter_api_key',
+    projectId: 'user-management',
+    serverurl: 'http://localhost/trakin/index.php'
+  }
 };
 
 /*
